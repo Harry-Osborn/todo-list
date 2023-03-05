@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TODOIST</title>
+    <link rel="icon" href="images/favicon (5).ico">
+</head>
+<body class="m-0 bg-contain" style="background-image: url('images/grid.jpg');">
+    <!-- navbar -->
+    <header class="bg-black/50 p-2">
+        <img src="images/to-do-list.png" class="inline-block w-12 h-12">
+        <p class="inline-block font-extrabold text-4xl text-yellow-500 align-bottom capitalize">TODOIST</p>
+    </header>
+
+    <!-- main container -->
+    <section class="flex flex-col align-middle items-center">
+        <!-- search bar -->
+        <input type="text" class="bg-slate-900/60 text-blue-200 text-center font-bold text-2xl rounded-lg w-5/6 px-5 placeholder:text-blue-200 placeholder:text-m align-middle mt-10" placeholder="search🔎" id="search">
+
+        <!-- todos container -->
+        <div class="w-1/2 mt-6" id="container">
+            <!-- new todos eill be added here -->
+            <div class="flex flex-row justify-between bg-yellow-300 my-2 text-2xl text-center font-extrabold text-green-900 rounded-xl p-2">
+                <div class="flex flex-row w-5/6">
+                    <input type="checkbox" class="inline-block mt-1.5 mx-2 rounded-full w-5 h-5 focus:ring-0 bg-transparent hover:cursor-pointer border-red-500 border-2 text-red-500 tick">
+                    <p class="inline-block text-left strike decoration-red-600">this</p>
+                </div>
+                <img src="images/closed-bin.png" class="w-7 h-7 mt-0.5 hover:cursor-pointer hover:bg-red-500 image">
+            </div>
+        </div>
+
+        <!-- create new todo -->
+        <input type="text" class="bg-green-500/60 text-yellow-100 text-center font-bold text-2xl rounded-lg w-1/2 px-5 placeholder:text-white placeholder:text-sm align-middle mt-2" id="new_todo" placeholder="✅next todo..">
+
+        <script src="final.js"></script>
+    </section>
+
+</body>
+</html>
